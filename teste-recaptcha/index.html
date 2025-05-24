@@ -80,6 +80,30 @@
       background-color: #174a84;
     }
 
+    .info-text {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .terms-text {
+      font-size: 12px;
+      color: #777;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .terms-text a {
+      color: #1f5fa3;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .terms-text a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 300px) {
       .container {
         width: calc(100% - 40px);
@@ -95,8 +119,12 @@
   <div class="container-wrapper">
     <img src="https://i.imgur.com/79x4QGp.png" alt="Ícone flutuante" class="floating-icon">
     <div class="container">
+      <div class="info-text">Verificação de segurança</div>
       <div class="g-recaptcha" data-sitekey="6LdwKUcrAAAAAIyv9PPxjmn53nYaYSabDtBqp_YO" data-callback="showButton"></div>
-      <button id="redirectBtn" class="redirect-btn" onclick="window.location.href='https://www.seusite.com'">Continuar</button>
+      <button id="redirectBtn" class="redirect-btn" onclick="window.location.href='https://www.seusite.com'">Inscreva-se agora!</button>
+      <div class="terms-text">
+        <a href="#">Termos de uso</a> | <a href="#">Política de privacidade</a>
+      </div>
     </div>
   </div>
   <div class="footer-bar"></div>
